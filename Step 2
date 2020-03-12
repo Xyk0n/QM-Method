@@ -1,1 +1,24 @@
-dfv;rvlf';vlregkdclvkmbkjncvlkmrfv;fmjv
+public class Step1 {
+
+	public static void main(String[] args) {
+		int x = 0;
+		int y = 0;
+		String s = " ";
+		int[][] truthtable = new int[0][0];
+		try {
+			Scanner scanner = new Scanner(new File("C:\\\\Users\\\\Alnon\\\\Documents\\\\Lewis.txt"));
+			while (scanner.hasNextLine()) {
+
+				System.out.print(scanner.nextLine());
+				x = Integer.parseInt(s);
+			}
+			scanner.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+	        }
+
+	}
+
+}
+
+
