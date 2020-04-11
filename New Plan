@@ -1,0 +1,17 @@
+File myFilenameVar = new File("test.txt"); // File searches the Java Project folder first. (If in 'src' folder, change to 'src/myfile.txt')
+      Scanner scan = new Scanner(myFilenameVar); // Open file
+
+      int inputAmount = scan.nextInt();
+      int colCount = scan.nextInt();
+      int rowCount = (int) Math.pow(2, inputAmount); // Capture number of inputs and outputs. Calculate following row count with 2^n where n=inputCount
+
+      int[][] truthtable = new int[rowCount][colCount]; // rowsize, column size
+
+      for(int r = 0; r < rowCount; r++)
+      {
+         for(int c = 0; c < colCount; c++)
+         {
+            truthtable[r][c] = scan.nextInt();
+         }
+      } // Text file processed and put into data structure (two-dimensional array)
+scan.close();
